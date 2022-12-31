@@ -46,7 +46,6 @@ body {
     color: white;
     position: relative;
     transition: color 0.3s linear;
-    
 }
 .nav_link::after {
     content: "";
@@ -74,7 +73,7 @@ body {
     text-transform: uppercase;
     font-size: 80px;
     font-family: 'Raleway', sans-serif;
-    padding-top: 300px;
+    padding-left: 20px;
 }
 /* Sections */
 .section_intro {
@@ -91,28 +90,61 @@ body {
 .section_pay {
     background-color: white;
 }
+.section_species {
+    background-color: white;
+}
+.section_contacts {
+    background-color:  white;
+}
+.footer {
+    background-color: #181818;
+}
 /* h1,h2,h3,h4,h5,h6 */
 .h1 {
+    margin: 0 auto;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 55px;
+    padding-top: 250px;
+    
+}
+.h2 {
     padding-top: 10px;
     margin: 0 auto;
     color: white;
     text-transform: uppercase;
     font-size: 48px;
     font-family: 'Raleway', sans-serif;
-    padding-left: 15px;
+    padding-left: 45px;
 }
-/* Number */
-.number {
-    display: flex;
-    flex-direction: column;
+/* BUTTON */
+.button {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    background-color: #2EFF00;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    padding: 12px 33px 12px 33px;
+    transition: .4s;
+}
+.button:hover {
+    background-color: #1B242B;
+    color: white;
+}
+.button_nav {
+    padding-left: 45px;
+    padding-top: 30px;
+}
+.button_program {
+    width: 60px;
+    height: 60px;
+    padding-top: 10px;
     padding-left: 30px;
 }
-.number_link {
-    font-family:'Merriweather', serif;
-    padding-top: 15px;
-    font-size: 50px;
-    text-decoration: none;
-    color: white;
+.button_contact {
+    display: flex;
 }
 /* ABOUT */
 .about_p {
@@ -234,6 +266,16 @@ body {
     color: white;
     font-size: 60px;
     padding-top: 20px;
+    transition: .4s;
+}
+.services_main:hover {
+    border-color: #2EFF00;
+}
+.services_main:hover i {
+    color: #2EFF00;
+}
+.services_main:hover span {
+    color: #2EFF00;
 }
 .services_main {
     display: flex;
@@ -246,6 +288,8 @@ body {
     border-radius: 10px;
     border-width: 2px;
     margin-top: 50px;
+    cursor: pointer;
+    transition: .4s;
 }
 .services_title {
     color: white;
@@ -253,10 +297,232 @@ body {
     text-align: center;
     font-size: 24px;
     max-width: 290px;
+    transition: .4s;
 }
 .services_container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding-bottom: 50px;
+}
+/* SPECIES */
+.species_title {
+    color: #3B3D42;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding-top: 60px;
+    margin: 0 auto;
+}
+.species_p {
+    display: flex;
+    justify-content: center;
+    font-family: 'Mulish', sans-serif;
+    font-size: 22px;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-weight: 700;
+}
+.species_nav {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+.species_main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.species_item {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #2EFF00;
+}
+.species_img {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+}
+.species_main_item {
+    display: flex;
+    justify-content: space-around;
+}
+/* CONTACTS */
+.contacts_title  {
+    color: #3B3D42;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.contacts_main {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid;
+    border-color: #2EFF00;
+}
+.contacts_nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.contacts {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+.contacts_map_paragraph {
+    font-family:'Rubik', sans-serif;
+    margin: 0 auto;
+    font-size: 18px;
+}
+.contacts_container_map {
+    padding-top: 10px;
+}
+.contacts_map_title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    padding-top: 5px;
+}
+.contacts_map_main {
+    padding-top: 5px;
+    line-height: 25px;
+}
+.contacts_map i {
+    font-size: 50px;
+}
+.contacts_oclock i {
+    font-size: 50px;
+}
+.contacts_nav_item {
+    padding-left: 10px;
+}
+.contacts_main_item {
+    display: flex;
+}
+.contacts_item {
+    display: flex;
+    flex-direction: column;
+}
+/* FOOTER */
+.footer_h1 {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 20px;
+}
+.footer_p {
+    color: white;
+    max-width: 400px;
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    font-size: 16px;
+    padding-top: 20px;
+}
+.footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.footer_link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 10px;
+}
+.footer_link_item {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    padding-left: 10px;
+    font-size: 17px;
+}
+.footer_item {
+    padding-top: 30px;
+}
+.footer_container_item {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    padding: 12px 26px 12px 26px;
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s;
+}
+.footer_container_main {
+    display: flex;
+}
+.footer_main i {
+    font-size: 20px;
+}
+.footer_item i {
+    color: white;
+    font-size: 20px;
+}
+.footer_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_main_item {
+    background-color: white;
+    padding: 12px 70px 12px 70px;
+    border-radius: 5px;
+    transition: .4s;
+    cursor: pointer;
+}
+.footer_container_item:hover {
+    background-color: white;
+}
+.footer_container_item:hover i {
+    color: black;
+}
+.footer_container_item:hover a {
+    color: black;
+}
+@media only screen and (max-width: 425px) {
+    .section_intro {
+        width: 100%;
+        height: 90vh;
+    }
+    .h1 {
+        font-size: 25px;
+    }
+    .pay_item {
+        display: flex;
+        flex-direction: column;
+    }
+    .about_me {
+        display: flex;
+        flex-direction: column;
+    }
+    .intro_title {
+        padding-top: 100px;
+        font-size: 45px;
+        padding-left: 15px;
+    }
+    .img_about {
+        width: 200px;
+        height: 100px;
+    }
+    .about_p {
+        font-size: 10px;
+        max-width: 350px;
+    }
+    .main_p {
+        font-size: 10px;
+        max-width: 350px;
+    }
 }
