@@ -495,19 +495,27 @@ body {
 @media only screen and (max-width: 425px) {
     .section_intro {
         width: 100%;
-        height: 90vh;
+        height: 80vh;
+    }
+    .intro {
+        height: 80vh;
     }
     .h1 {
-        font-size: 35px;
-        max-width: 300px;
+        font-size: 30px;
+        max-width: 250px;
         text-align: inherit;
         margin-left: 30px;
         padding-top: 150px;
     }
     .h2 {
-        font-size: 35px;
+        font-size: 30px;
         padding-top: 0;
         padding-left: 25px;
+        max-width: 250px;
+        margin-left: 0;
+    }
+    .button {
+        font-size: 15px;
     }
     .button_contact {
         flex-direction: column;
@@ -521,6 +529,9 @@ body {
     }
     .pay_main {
         margin-top: 30px;
+        text-align: center;
+        width: 320px;
+        height: 280px;
     }
     .species_p {
         flex-direction: column;
@@ -528,20 +539,33 @@ body {
     }
     .species_main{
         align-items: center;
+        padding-top: 30px;
+    }
+    .species_img {
+        width: 330px;
+        height: 180px;
     }
     .species_title {
         text-align: center;
         padding-top: 50px;
+        font-size: 35px;
     }
     .species_nav {
-        font-size: 30px;
+        font-size: 25px;
         text-align: center;
+        max-width: 250px;
     }
     .species_main_item {
         flex-direction: column;
     }
     .contacts_main_item {
         flex-direction: column;
+    }
+    .services_main {
+        width: 340px;
+    }
+    .services_h1 {
+        font-size: 35px;
     }
     .contacts_nav {
         flex-direction: column;
@@ -557,6 +581,10 @@ body {
     }
     .contacts_title {
         padding-top: 40px;
+        font-size: 35px;
+    }
+    .footer_p {
+        max-width: 320px;
     }
     .footer_wrapper {
         flex-direction: column-reverse;
@@ -576,6 +604,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 20px;
     }
     .about_me {
         display: flex;
@@ -584,7 +613,7 @@ body {
         text-align: center;
     }
     .intro_title {
-        font-size: 45px;
+        font-size: 40px;
         padding-left: 25px;
     }
     .img_about {
@@ -592,23 +621,33 @@ body {
         height: 150px;
     }
     .about_p {
-        font-size: 13px;
-        max-width: 350px;
+        font-size: 12px;
+        max-width: 310px;
     }
     .main_p {
-        font-size: 12px;
-        max-width: 350px;
+        font-size: 11px;
+        max-width: 310px;
+    }
+    .img {
+        padding-left: 0;
     }
     .main {
         padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .main_button {
         padding-top: 25px;
         padding-left: 15px;
     }
     .button_program {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
         padding-left: 20px;
+    }
+    .header_iner {
+        flex-direction: column;
+        text-align: center;
     }
 }
