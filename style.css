@@ -497,6 +497,20 @@ body {
         width: 100%;
         height: 80vh;
     }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #1B242B;
+        align-items: center;
+        z-index: 2;
+    }
+    .nav_link::after {
+        display: none;
+    }
+    .nav_link {
+        line-height: 40px;
+    }
     .intro {
         height: 80vh;
     }
@@ -505,7 +519,7 @@ body {
         max-width: 250px;
         text-align: inherit;
         margin-left: 30px;
-        padding-top: 150px;
+        padding-top: 130px;
     }
     .h2 {
         font-size: 30px;
@@ -618,7 +632,7 @@ body {
     }
     .img_about {
         width: 300px;
-        height: 150px;
+        height: 180px;
     }
     .about_p {
         font-size: 12px;
@@ -630,6 +644,7 @@ body {
     }
     .img {
         padding-left: 0;
+        padding-bottom: 15px;
     }
     .main {
         padding-top: 0;
