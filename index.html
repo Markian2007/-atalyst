@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="Script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,28 +31,28 @@
     <title>Zday Cat</title>
 </head>
 <body>
-    <header class="header active">
+    <header class="header" id="header">
         <div class="header_item">
             <div class="container">
                 <div class="header_iner">
                     <img class="img" src="images/logo.png" alt="logo">
-                  <nav class="nav">
-                    <a class="nav_link active" href="#INTRO">Головна</a>
-                    <a class="nav_link" href="#ABOUT">Про нас</a>
-                    <a class="nav_link" href="#PAY">Способи оплати</a>
-                    <a class="nav_link" href="#SERVICES">Послуги</a>
-                    <a class="nav_link" href="#SPECIES">Види каталізаторів</a>
-                    <a class="nav_link" href="#CONTACTS">Контакти</a>
+                  <nav class="nav" id="nav">
+                    <a class="nav_link active" href="#INTRO" data-scroll="#header">Головна</a>
+                    <a class="nav_link" href="#ABOUT" data-scroll="#ABOUT">Про нас</a>
+                    <a class="nav_link" href="#PAY" data-scroll="PAY">Способи оплати</a>
+                    <a class="nav_link" href="#SERVICES" data-scroll="SERVICES">Послуги</a>
+                    <a class="nav_link" href="#SPECIES" data-scroll="SPECIES">Види каталізаторів</a>
+                    <a class="nav_link" href="#CONTACTS" data-scroll="CONTACTS">Контакти</a>
                   </nav>
-                  <button class="nav-toggle" type="button">
-                      <span class="nav-toggle_item">Menu</span>
+                  <button class="nav-toggle" id="nav_toggle" type="button">
+                      <span class="nav-toggle_item ">Menu</span>
                   </button>
                 </div>
             </div>
         </div>
     </header>
     <section class="section_intro" id="INTRO">
-        <div class="intro">
+        <div class="intro" id="intro">
             <div class="container">
                 <div class="intro_iner">
                     <h1 class="h1">Перший лідер в області</h1>
@@ -261,5 +260,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

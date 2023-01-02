@@ -78,7 +78,7 @@ body {
     padding-left: 20px;
 }
 .intro_iner {
-    padding-top: 320px;
+    padding-top: 300px;
 }
 /* Sections */
 .section_intro {
@@ -524,16 +524,21 @@ body {
         top: 100%;
     }
     .nav {
+        display: none;
        position: absolute;
        top: 100%;
        width: 100%;
        left: 0;
        background-color: #1b242b; 
+       transition: top 0.8s;
+    }
+    .nav.active {
+        display: block;
     }
     .nav_link {
-        display: none;
+        display: block;
         margin: 0;
-        padding: 10px 20px;
+        padding: 11px 20px;
         font-size: 13px;
     }
     .nav-toggle {
@@ -562,13 +567,30 @@ body {
         left: 0;
         margin: auto;
     }
+    .nav-toggle.active .nav-toggle_item {
+        background: none;
+    }
+    .nav-toggle.active 
+    .nav-toggle_item::before {
+        transform-origin: left top;
+        transform: rotate(45deg)
+        translate3d(0px, -2px, 0);
+    }
+    .nav-toggle.active
+    .nav-toggle_item::after {
+        transform-origin: left bottom;
+        transform: rotate(-45deg)
+        translate3d(-1px, 3px, 0);
+    }
     .nav-toggle_item::before,
     .nav-toggle_item::after {
         content: "";
         width: 100%;
         height: 3px;
         background-color: white;
+        transition: transform .4s linear;
         position: absolute;
+        transition: .4s;
         left: 0;
         z-index: 1;
     }
@@ -578,7 +600,7 @@ body {
     .nav-toggle_item::after {
         bottom: -8px;
     }
-    .header,.fixed {
+    .header.fixed {
         background-color: #1b242b;
         position: fixed;
         top: 0;
