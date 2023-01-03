@@ -11,8 +11,8 @@ body {
 /* Images */
 .img {
     padding-left: 20px;
-    width: 130px;
-    height: 55px;
+    width: 120px;
+    height: 50px;
 }
 .img_about {
     width: 550px;
@@ -159,7 +159,7 @@ body {
     display: flex;
     justify-content: space-around;
     padding-bottom: 20px;
-    padding-top: 10px;
+    padding-top: 45px;
 }
 .about_h1 {
     text-transform: uppercase;
@@ -197,7 +197,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 90px;
 }
 .pay_item {
     display: flex;
@@ -256,7 +256,7 @@ body {
     padding-left: 50px;
     padding-right: 50px;
     border-color: #2EFF00;
-    padding-top: 50px;
+    padding-top: 90px;
     padding-bottom: 15px;
     margin-bottom: 30px;
 }
@@ -316,7 +316,7 @@ body {
     display: flex;
     justify-content: center;
     font-size: 40px;
-    padding-top: 60px;
+    padding-top: 90px;
     margin: 0 auto;
 }
 .species_p {
@@ -507,6 +507,7 @@ body {
     z-index: 1000;
     transform: translate3d(0, 0, 0);
 }
+/* SCREEN 425 */
 @media only screen and (max-width: 425px) {
     .section_intro {
         width: 100%;
@@ -530,7 +531,6 @@ body {
        width: 100%;
        left: 0;
        background-color: #1b242b; 
-       transition: top 0.8s;
     }
     .nav.active {
         display: block;

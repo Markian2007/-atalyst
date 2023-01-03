@@ -1,23 +1,13 @@
 $(function() {
 
     /* Smooth scroll */
-    $("[data-scroll]").on("click", function(event) {
-        event.preventDefault();
-
-        var $this = $(this),
-            blockId = $this.data('scroll'),
-            blockOffset = $(blockId).offset().top;
-
-        $("#nav a").removeClass("active");
-        $this.addClass("active");
-
-        $("html, body").animate({
-            scrollTop:  blockOffset
-        }, 500);
-        
+    var $page = $('html, body');
+    $('a[href*="#"]').click(function() {
+        $page.animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 400);
+        return false;
     });
-
-
 
     /* Menu nav toggle */
     $("#nav_toggle").on("click", function(event) {
