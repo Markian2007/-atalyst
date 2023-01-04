@@ -641,6 +641,7 @@ body {
     }
     .pay_h1 {
         padding-top: 50px;
+        text-align: center;
     }
     .pay_main {
         margin-top: 30px;
