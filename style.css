@@ -168,7 +168,7 @@ body {
     line-height: 1;
     font-size: 38px;
     margin: 0 auto;
-    padding-top: 23px;
+    padding-top: 35px;
 }
 .about_main {
     padding-left: 20px;
@@ -740,8 +740,8 @@ body {
         max-width: 310px;
     }
     .main_p {
-        font-size: 11px;
-        max-width: 310px;
+        font-size: 12px;
+        max-width: 320px;
     }
     .img {
         padding-left: 30px;
